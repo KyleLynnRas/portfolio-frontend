@@ -1,38 +1,273 @@
+/*--GOOGLE FONTS--*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;400&display=swap');
+/* 
+* {
+  border: solid 1px yellow;
+} */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
+  font-family: 'Raleway', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*--PROJ SECTION--*/
+.proj-container {
+  background-image: url("https://i.imgur.com/j5fPMjm.jpg");
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.proj-container > h1 {
+  margin-top: 10px;
+  font-size: 45px;
+  color: #fff;
+  font-family: 'Lobster', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.proj-card {
+  height: 60%;
+  width: 80%;
+  margin: 20px 20px 20px 20px;
+  background-color: rgba(122, 59, 204 ) !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.proj-video {
+  background-color: #000;
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+}
+
+.proj-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-title {
+ font-style: italic;
+ margin-bottom: 30px;
+ color: #000;
+ font-size: 20px;
+ margin-top: 8px;
+}
+
+.button-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.plus-btn {
+  background-image: url("https://i.imgur.com/hPYJarx.png");
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: none;
+}
+
+.play {
+  position: relative;
+  right: 30px;
+  color:#000;
+  font-size: 33px;
+}
+
+.gHub {
+  position: relative;
+  right: -10px;
+  color:#000 ;
+  font-size: 28px;
+}
+
+/*--proj cards--*/
+.proj-card-info {
+  max-width: 80%;
+}
+
+.summ, .tech{
+  max-width: 80%;
+  max-height: 79%;
+  margin-bottom: 10px;
+  background: #000 !important;
+}
+
+.summ p, .tech p {
+  color: #fff;
+}
+
+.summ h3, .tech h3 {
+  font-size: 30px;
+  color: rgb(135, 135, 135);
+  font-family: 'Lobster', cursive;
+}
+
+@media screen and (min-width: 500px) {
+  .proj-container {
+    display: flex;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .proj-card {
+    width: 45vw;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .proj-container {
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url("https://i.imgur.com/AAfHVuV.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .proj-container > h1 {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    margin: 20px;
+    font-size: 35px;
+  }
+
+  .proj-card {
+    width: 40vw;
+    height: auto;
+  }
+
+  .plus-btn {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .play {
+    font-size: 40px;
+  }
+  
+  .gHub {
+    color:#000 ;
+    font-size: 35px;
+  }
+
+  .proj-card-info {
+    width: 50%;
+  }
+
+  .summ, .tech{
+    max-width: 50%;
+    max-height: 49%;
+  }
+  
+  .summ h3, .tech h3 {
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (min-width: 950px) { 
+  .proj-container > h1 {
+    font-size: 50px;
+  }
+
+  .proj-card {
+    margin-top: 40px;
+    max-width: 40vw;
+    max-height: 70%;
+  }
+
+  .proj-title {
+    font-size: 20px;
+  }
+
+  .plus-btn {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .play {
+    font-size: 45px;
+  }
+  
+  .gHub {
+    font-size: 40px;
+  }
+
+  .proj-video {
+    height: 25vh;
+  }
+
+  .proj-card-info {
+    width: 50%;
+  }
+  
+  .summ, .tech{
+    max-width: 50%;
+    height: 40%;
+  }
+  
+  .summ h3, .tech h3 {
+    font-size: 40px;
+  }
+
+  .summ p, .tech p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .proj-container > h1 {
+    font-size: 70px;
+  }
+
+  .proj-card {
+    width: 30vw;
+    height: 60%;
+  }
+
+  .proj-title {
+    font-size: 30px;
+    margin-top: 13px;
+  }
+
+  .plus-btn {
+    width: 125px;
+    height: 125px;
+  }
+  
+  .play {
+    font-size: 60px;
+  }
+  
+  .gHub {
+    color:#000;
+    font-size: 55px;
+  }
+
+}
+

@@ -11,8 +11,7 @@ const Header = (props) => {
     }
 
     return(
-        <header>
-            <h1>My Portfolio Page</h1>
+        <header style={{backgroundColor: "black"}}>
             <nav style={navStyle}>
                 <Link to="/">
                     <div>HOME</div>
