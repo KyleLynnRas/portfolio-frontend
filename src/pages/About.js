@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react"
+//components 
+import LinkBox from "../components/about/LinkBox"
+import AboutBox from "../components/about/AboutBox"
 
 const About = (props) => {
     //state for data
@@ -18,10 +21,11 @@ const About = (props) => {
     useEffect(() => getAboutData(), [])
 
     const loaded = () => (
-        <div>
-            <h2>{about.name}</h2>
-            <h3>{about.email}</h3>
-            <p>{about.bio}</p>
+        <div className="about-container">
+            <h1 className="about-title">About</h1>
+            <img src={about.headshot} alt={about.name} className="headshot"/>
+            <LinkBox about={about} />
+            <AboutBox about={about} />
         </div>
     )
 

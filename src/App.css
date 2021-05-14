@@ -25,7 +25,7 @@ body {
   align-items: center;
 }
 
-.proj-container > h1 {
+.proj-container > h1, .about-title {
   margin-top: 10px;
   font-size: 45px;
   color: #fff;
@@ -126,6 +126,84 @@ body {
   font-family: 'Lobster', cursive;
 }
 
+
+/*--ABOUT SECTION--*/
+.about-container {
+  background-image: url("https://i.imgur.com/j5fPMjm.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot {
+  margin-top: 25px;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+}
+
+/*--link box--*/
+.link-box {
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.icon-link {
+  font-size: 30px;
+  color: rgba(181, 33, 136);
+}
+
+.icon-link:hover{
+  color: rgba(88, 30, 168);
+}
+
+/*--about box component--*/
+.about-box-container {
+  background-color: #000 !important;
+  width: 80%;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.about-box-container > h1 {
+  color: rgb(135, 135, 135);
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+
+.about-box-container p {
+  color: #fff;
+  margin: 10px;
+}
+
+/*--control component--*/
+.control-btn-box {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.control-btn-left, .control-btn-right {
+  background-image: url("https://i.imgur.com/wg007Kc.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.control-btn-right {
+  background-image: url("https://i.imgur.com/QlIFudj.png");
+}
+
+/*--MEDIA QUERY--*/
 @media screen and (min-width: 500px) {
   .proj-container {
     display: flex;
@@ -134,6 +212,26 @@ body {
 
   .proj-card {
     width: 45vw;
+  }
+
+  /*--ABOUT SECTION--*/
+  .about-container {
+    height: 95vh;
+  }
+
+  /*--link box--*/
+  .link-box {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  /*--about box component--*/
+  .about-box-container > h1 {
+    font-size: 30px;
+  }
+
+  .about-box-container p {
+    font-size: 15px;
   }
 }
 
@@ -188,6 +286,50 @@ body {
     font-size: 30px;
   }
 
+  /*--ABOUT SECTION--*/
+  .about-title {
+    margin-top: 30px;
+    font-size: 55px;
+  }
+
+  .headshot {
+    margin-bottom: 15px;
+    margin-top: 50px;
+    height: 25vh;
+    width: 25vh;
+  }
+  
+  /*--link box--*/
+  .icon-link {
+    margin: 20px;
+    font-size:40px;
+  }
+
+  /*--about box component--*/
+  .about-box-container {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .about-box-container > h1 {
+    color: rgb(135, 135, 135);
+    font-family: "Lobster", cursive;
+    font-size: 35px;
+  }
+
+  .about-box-container p {
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  /*--control component--*/
+  .control-btn-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 950px) { 
@@ -238,6 +380,37 @@ body {
   .summ p, .tech p {
     font-size: 18px;
   }
+
+  /*--ABOUT SECTION--*/
+  .about-title {
+    margin-top: 70px;
+    font-size: 55px;
+  }
+ 
+  /*--about box component--*/
+  .about-box-container {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .about-box-container > h1 {
+    font-size: 45px;
+  }
+
+  .about-box-container p {
+    font-size: 18px;
+  }
+
+  /*--control component--*/
+  .control-btn-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .control-btn-left, .control-btn-right {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -267,6 +440,39 @@ body {
   .gHub {
     color:#000;
     font-size: 55px;
+  }
+
+  /*--ABOUT SECTION--*/
+  .about-container{
+    background-image: url("https://i.imgur.com/yb3H3zc.jpg");
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .about-title {
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    margin: 20px;
+  }
+
+  .headshot {
+    height: 35vh;
+    width: 35vh;
+  }
+  
+  /*--link box--*/
+  .link-box {
+    width: 10%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  /*--about box component--*/
+  .about-box-container {
+    width: 50%;
   }
 
 }
