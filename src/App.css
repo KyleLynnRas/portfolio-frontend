@@ -203,11 +203,65 @@ body {
   background-image: url("https://i.imgur.com/QlIFudj.png");
 }
 
+/*--HOME--*/
+.home-container {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-box > h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Lobster", cursive;
+}
+
+.home-h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.icon-banner {
+  width: 100vw;
+  height: auto;
+}
+
+.connect {
+  color: rgb(135, 135, 135);
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/*--contact box--*/
+.contact-box {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+}
+
+.contact-container h4 {
+  margin-bottom: 20px;
+}
+
+.home-icon {
+  font-size: 25px;
+  color: rgba(67, 194, 234);
+}
+
 /*--NAV BAR--*/
 .nav-link {
   color: #fff;
   font-weight: 600;
 }
+
 
 /*--MEDIA QUERY--*/
 @media screen and (min-width: 500px) {
@@ -336,6 +390,29 @@ body {
     justify-content: space-around;
     margin-bottom: 20px;
   }
+
+  /*--HOME--*/
+  .title-box > h1 {
+    font-size: 55px;
+  }
+
+  .home-h3 {
+    font-size: 30px;
+  }
+
+  .connect {
+    font-size: 30px;
+  }
+
+  /*--contact box--*/
+  .contact-container h4 {
+    margin-bottom: 30px;
+  }
+
+  .home-icon {
+    font-size: 35px;
+  }
+
 }
 
 @media screen and (min-width: 950px) { 
@@ -416,6 +493,28 @@ body {
   .control-btn-left, .control-btn-right {
     width: 50px;
     height: 50px;
+  }
+  
+  /*--HOME--*/
+  .title-box > h1 {
+    font-size: 65px;
+  }
+
+  .home-h3 {
+    font-size: 40px;
+  }
+
+  .connect {
+    font-size: 40px;
+  }
+
+  /*--contact box--*/
+  .contact-container h4 {
+    margin-bottom: 38px;
+  }
+
+  .home-icon {
+    font-size: 45px;
   }
 }
 
