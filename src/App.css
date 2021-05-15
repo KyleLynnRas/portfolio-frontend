@@ -203,6 +203,12 @@ body {
   background-image: url("https://i.imgur.com/QlIFudj.png");
 }
 
+/*--NAV BAR--*/
+.nav-link {
+  color: #fff;
+  font-weight: 600;
+}
+
 /*--MEDIA QUERY--*/
 @media screen and (min-width: 500px) {
   .proj-container {

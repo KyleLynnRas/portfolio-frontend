@@ -7,19 +7,19 @@ const Header = (props) => {
         border: "3px solid black",
         padding: "8px",
         width: "90%",
-        margin: "auto"
+        margin: "auto",
     }
 
     return(
-        <header style={{backgroundColor: "black"}}>
+        <header style={{backgroundColor: "#000"}}>
             <nav style={navStyle}>
-                <Link to="/">
+                <Link to="/" className="nav-link">
                     <div>HOME</div>
                 </Link>
-                <Link to="/about">
+                <Link to="/about" className="nav-link">
                     <div>ABOUT</div>
                 </Link>
-                <Link to="/projects">
+                <Link to="/projects" className="nav-link">
                     <div>PROJECTS</div>
                 </Link>
             </nav>
