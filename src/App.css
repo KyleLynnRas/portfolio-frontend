@@ -262,15 +262,20 @@ body {
 .nav-link {
   color: #fff;
   font-weight: 600;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #fff;
 }
 
 /*--FOOTER--*/
 .footer-container {
   background-color: #000 !important;
-  height: 17vh;
+  height: 16vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -281,6 +286,7 @@ body {
 
 .footer-container p {
   color: #fff;
+  font-size: 10px;
 }
 
 /*--MEDIA QUERY--*/
