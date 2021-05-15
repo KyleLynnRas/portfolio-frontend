@@ -1,5 +1,7 @@
 /*--GOOGLE FONTS--*/
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;400&display=swap');
+/*--BULMA--*/
+@import 'bulma/css/bulma.css';
 /* 
 * {
   border: solid 1px yellow;
@@ -262,6 +264,24 @@ body {
   font-weight: 600;
 }
 
+/*--FOOTER--*/
+.footer-container {
+  background-color: #000 !important;
+  height: 17vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-img {
+  height: 9vh;
+  background-color: transparent;
+}
+
+.footer-container p {
+  color: #fff;
+}
 
 /*--MEDIA QUERY--*/
 @media screen and (min-width: 500px) {
@@ -525,7 +545,7 @@ body {
 
   .proj-card {
     width: 30vw;
-    height: 60%;
+    height: 65%;
   }
 
   .proj-title {

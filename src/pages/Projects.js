@@ -4,6 +4,7 @@ import "bulma/css/bulma.min.css"
 //components
 import ProjCard from "../components/projects/ProjCard"
 import Console from "../components/projects/Console"
+import FooterComp from "../components/FooterComp"
 
 const Projects = (props) => {
     //state projects api
@@ -43,14 +44,17 @@ const Projects = (props) => {
     const loaded = () => {
     //    console.log(display.image)
         return (
-            <div className="proj-container">
-                <h1>Projects</h1>
-                <Console display={display} handleChange={handleChange} />
-                <section className="proj-card-info">
-                    <ProjCard class="summ" title="Summary" par={display.summary}/>
-                    <ProjCard class="tech" title="Tech" par={display.tech}/>
-                </section>
-            </div>
+            <>
+                <div className="proj-container">
+                    <h1>Projects</h1>
+                    <Console display={display} handleChange={handleChange} />
+                    <section className="proj-card-info">
+                        <ProjCard class="summ" title="Summary" par={display.summary}/>
+                        <ProjCard class="tech" title="Tech" par={display.tech}/>
+                    </section>
+                </div>
+                <FooterComp />
+            </>
         )
     }
 

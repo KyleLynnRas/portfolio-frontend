@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 //components 
 import LinkBox from "../components/about/LinkBox"
 import AboutBox from "../components/about/AboutBox"
+import FooterComp from "../components/FooterComp"
 
 const About = (props) => {
     //state for data
@@ -21,12 +22,15 @@ const About = (props) => {
     useEffect(() => getAboutData(), [])
 
     const loaded = () => (
-        <div className="about-container">
-            <h1 className="about-title">About</h1>
-            <img src={about.headshot} alt={about.name} className="headshot"/>
-            <LinkBox about={about} />
-            <AboutBox about={about} />
-        </div>
+        <>
+            <div className="about-container">
+                <h1 className="about-title">About</h1>
+                <img src={about.headshot} alt={about.name} className="headshot"/>
+                <LinkBox about={about} />
+                <AboutBox about={about} />
+            </div>
+            <FooterComp />
+        </>
     )
 
     //if data returned JSX in loaded, otherwise h1
